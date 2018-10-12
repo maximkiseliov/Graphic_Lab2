@@ -44,7 +44,7 @@ plt.show()
 # Creating str that will contain country name * number of medals
 text = str()
 for i in range(len(dictionary_from_csv['countries'])):
-    text += (dictionary_from_csv['countries'][i] + " ") * int(dictionary_from_csv['total_medals'][i]/2)
+    text += (dictionary_from_csv['countries'][i] + " ") * dictionary_from_csv['total_medals'][i]
 text = text[:-1]
 
 temp_list = text.split(' ')
